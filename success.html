@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Sucess PAge</title>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-lg font-semibold">Dashboard</div>
+            <div class="md:hidden">
+                <button id="hamburger" class="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-white">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+            <div id="menu" class="hidden md:flex space-x-4">
+                <a href="#" class="hover:underline">Home</a>
+                <a href="#" class="hover:underline">Profile</a>
+                <a href="#" class="hover:underline">Settings</a>
+                <a href="#" class="hover:underline">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto mt-8 px-4">
+        <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-white shadow rounded-lg p-6">
+                <h2 class="text-lg font-semibold">Card 1</h2>
+                <p class="mt-2 text-gray-600">Content for card 1.</p>
+            </div>
+            <div class="bg-white shadow rounded-lg p-6">
+                <h2 class="text-lg font-semibold">Card 2</h2>
+                <p class="mt-2 text-gray-600">Content for card 2.</p>
+            </div>
+            <div class="bg-white shadow rounded-lg p-6">
+                <h2 class="text-lg font-semibold">Card 3</h2>
+                <p class="mt-2 text-gray-600">Content for card 3.</p>
+            </div>
+        </div> -->
+    </div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase.js"></script>
+    <script type= "module" src="./firebaseconfig.js"></script>
+</body>
+</html>

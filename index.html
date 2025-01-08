@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/output.css" rel="stylesheet">
+
+    <title>Firebase Sign Up</title>
+</head>
+<body class="bg-blue-400 flex justify-center items-center min-h-screen">
+
+
+    <!-- Form Container -->
+    <div class="container mx-auto p-6 bg-white shadow-lg rounded-lg max-w-md">
+        <form action="" class="space-y-4">
+            <div>
+                <input type="text" id="firstname" placeholder="First Name" 
+                    class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+                <input type="text" id="lastname" placeholder="Last Name" 
+                    class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+                <input type="email" id="email" placeholder="Enter Email" 
+                    class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+                <input type="password" id="password" placeholder="Enter Password" 
+                    class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+                <input type="password" id="reppassword" placeholder="Confirm Password" 
+                    class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+                <button id="btn" type="submit" 
+                    class="w-full bg-blue-600 text-white py-3 rounded shadow hover:bg-blue-700 transition">
+                    Submit
+                </button>
+            </div>
+        </form>
+        <p class="m-4 text-gray-500 hover:text-black cursor-pointer">Do you have already an account? Click
+            <!-- Login Button -->
+         <button class=" px-4 py-2 bg-blue-500 text-white rounded shadow hover:bg-blue-700 transition">
+         <a href="./login.html" class="no-underline">Login</a>
+         </button>
+        </p>
+    </div>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase.js"></script> //resources -->
+    <script type= "module" src="./firebaseconfig.js"></script> 
+</body>
+</html>
