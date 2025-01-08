@@ -15,3 +15,5 @@ Firebase ik component ha jo backened ko services provide krta ha
 
   <!-- <script src="https://www.gstatic.com/firebasejs/11.1.0/firebase.js"></script> //resources -->
     <script type= "module" src="./firebaseconfig.js"></script> //config
+
+<h1>FIRE BASE SIGN UP LOGIN FORM</h1>
